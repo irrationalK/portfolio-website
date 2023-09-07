@@ -7,14 +7,24 @@ const data = [
   {
     id: 1,
     image: flowchart,
-    title: 'Flowchart-Widget with translation function',
+    title: 'Flowchart-Widget',
+    description: 'Editor for creating programme flowcharts with translation function into pseudocode and natural language.\n' + 'Created with TypeScript and Lit.',
     github: 'https://github.com',
     demo: 'https://github.com'
   },
   {
     id: 2,
     image: plane,
-    title: 'Plane Blower - Swift App',
+    title: 'Plane Blower',
+    description: 'Make the paper plane fly by blowing. Try to get as far as possible!',
+    github: 'https://github.com',
+    demo: 'https://github.com'
+  },
+  {
+    id: 3,
+    image: flowchart,
+    title: 'Portfolio Website',
+    description: 'Show my work',
     github: 'https://github.com',
     demo: 'https://github.com'
   }
@@ -28,16 +38,17 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
        {
-        data.map(({id, image, title, github, demo}) => {
+        data.map(({id, image, title, description, github, demo}) => {
           return (
             <article key={id} className='portfolio__item'>
             <div className='portfolio__item-image'>
               <img src={image} alt={title} />
             </div>
             <h3>{title}</h3>
+            <h4>{description}</h4>
             <div className="portfolio__item-cta">
               <a href={github} target='_blank' className='btn'>Github</a>
-              <a href={demo} target='_blank' className='btn btn-primary'>Live Demo</a>
+              <a href={demo} target='_blank' className='btn'>Live Demo</a>
             </div>
           </article>
           )

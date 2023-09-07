@@ -11,9 +11,16 @@
 }
 
 :root {
-   --color-bg: #1f1f38;
+   /* --color-bg: #1f1f38;
    --color-bg-variant: #2c2c6c;
    --color-primary: #4db5ff;
+   --color-primary-variant: rgba(77, 181, 255, 0.4);
+   --color-white: #fff;
+   --color-light: rgba(255, 255, 255, 0.6); */
+   /*192c4a */
+   --color-bg: #162640;
+   --color-bg-variant: #1a2e4e;
+   --color-primary: #eb8b42;
    --color-primary-variant: rgba(77, 181, 255, 0.4);
    --color-white: #fff;
    --color-light: rgba(255, 255, 255, 0.6);
@@ -98,7 +105,7 @@ a:hover {
 }
 
 .btn:hover {
-   background: var(--color-white);
+   background: var(--color-primary);
    color: var(--color-bg);
    border-color: transparent;
 }
