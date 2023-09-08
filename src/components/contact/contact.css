@@ -1,3 +1,7 @@
+.contact {
+   padding-top: 6vh;
+}
+
 .container.contact__container {
    width: 58%;
    display: grid;
