@@ -10,7 +10,7 @@ const data = [
     title: 'Flowchart-Widget',
     description: 'Editor for creating programme flowcharts with translation function into pseudocode and natural language.\n' + 'Created with TypeScript and Lit.',
     github: 'https://github.com',
-    demo: 'https://github.com'
+    demo: 'https://flowchart-lu.netlify.app'
   },
   {
     id: 2,

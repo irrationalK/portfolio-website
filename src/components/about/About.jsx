@@ -24,7 +24,7 @@ const About = () => {
               <article className='about__card'>
                 <MdOutlineSchool className='about__icon'/>
                 <h5>Qualification</h5>
-                <small>M. Ed Computer Science, RWTH</small>
+                <small>M. Ed. Computer Science, RWTH</small>
               </article>
 
               <article className='about__card'>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './header.css'
 import HeaderSocials from './HeaderSocials'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logoGradient.svg'
 
 const Header = () => {
   const greetingText = "Hi, I'm";
   const nameText = "Kevin Lu.";
-  const professionTexts = ["M. Ed Computer Science, RWTH", "Web Developer", "App Developer"];
+  const professionTexts = ["M. Ed. Computer Science, RWTH", "Web Developer", "App Developer"];
   
   const [textGreeting, setTextGreeting] = useState('');
   const [textName, setTextName] = useState('');
@@ -43,35 +43,33 @@ const Header = () => {
   }, [textGreeting, textName, textProfession, index, professionIndex]);
 
   return (
-    <header>
-      <div className="container header__container">
-        <div className='header-text'>
-          <h1 className="large-font">{textGreeting}
-            {index < greetingText.length && <span>|</span>}
-          </h1>
-          <h1 className="large-font">{textName}
-            {/* Cursor nur anzeigen, wenn der Text noch nicht vollständig ist */}
-            {index >= greetingText.length && index < greetingText.length + nameText.length && <span>|</span>}
-          </h1>
-          <h5 className='text-light medium-font'>{textProfession}
-            {index >= greetingText.length + nameText.length && textProfession.length < professionTexts[professionIndex].length && <span>|</span>}
-          </h5>
+    <header  id='home'>
+        <div className="container header__container">
+          <div className='header-text'>
+            <h1 className="large-font">{textGreeting}
+              {index < greetingText.length && <span>|</span>}
+            </h1>
+            <h1 className="large-font">{textName}
+              {/* Cursor nur anzeigen, wenn der Text noch nicht vollständig ist */}
+              {index >= greetingText.length && index < greetingText.length + nameText.length && <span>|</span>}
+            </h1>
+            <h5 className='text-light medium-font'>{textProfession}
+              {index >= greetingText.length + nameText.length && textProfession.length < professionTexts[professionIndex].length && <span>|</span>}
+            </h5>
 
-          <div className='cta'>
-            <a href='#contact' className='btn'>Get In Contact!</a>
+            <div className='cta'>
+              <a href='#contact' className='btn'>Get In Contact!</a>
+            </div>
+
+            <HeaderSocials />
           </div>
-
-          <HeaderSocials />
+        
+          <div className='header-logo'>
+            <img src={logo} alt='Logo mit den Initialen K und L' />
+          </div>
+        
+          <a href='#contact' className='scroll__down'>Scroll Down</a>
         </div>
-       
-        <div className='header-logo'>
-          <img src={logo} alt='Logo mit den Initialen K und L' />
-        </div>
-      
-        <a href='#contact' className='scroll__down'>Scroll Down</a>
-      </div>
-   
-      
     </header>
   )
 }

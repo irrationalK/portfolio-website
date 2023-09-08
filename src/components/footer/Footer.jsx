@@ -3,11 +3,14 @@ import './footer.css'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 import {BsInstagram} from 'react-icons/bs'
+import logo from '../../assets/logo.svg'
 
 const Footer = () => {
   return (
     <footer>
-      <a href='#' className='footer__logo'> K. Lu</a>
+      <a href='#' className='footer__logo'> 
+        <img src={logo} alt='Logo mit den Initialen K und L' />
+      </a>
 
       <ul className='permalinks'>
         <li><a href='#'>Home</a></li>

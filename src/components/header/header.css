@@ -16,8 +16,8 @@ header {
    display: flex;
    justify-content: center;
    align-items: center; 
-   margin-top: -8rem;
-   width: 42rem;
+   margin-top: -9rem;
+   width: 44rem;
    height: auto;
 }
 
@@ -30,10 +30,12 @@ header {
 
 .large-font {
    font-size: 6rem;
+   margin-bottom: -2.5rem;
 }
 
 .medium-font {
    font-size: 1.5rem;
+   margin-top: 2rem;
 }
 
 /* ----------- CTA ----------- */
