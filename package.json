@@ -1,5 +1,6 @@
 {
-  "name": "portfolio-website",
+  "name": "lu-portfolio",
+  "homepage": "http://k-lu.de",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

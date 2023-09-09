@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import flowchart from '../../assets/flowchart.png'
 import plane from '../../assets/blow-plane.png'
+import portfolio from '../../assets/portfolio.png'
 
 const data = [
   {
@@ -9,24 +10,24 @@ const data = [
     image: flowchart,
     title: 'Flowchart-Widget',
     description: 'Editor for creating programme flowcharts with translation function into pseudocode and natural language.\n' + 'Created with TypeScript and Lit.',
-    github: 'https://github.com',
+    github: 'https://github.com/irrationalK',
     demo: 'https://flowchart-lu.netlify.app'
   },
   {
     id: 2,
     image: plane,
     title: 'Plane Blower',
-    description: 'Make the paper plane fly by blowing. Try to get as far as possible!',
-    github: 'https://github.com',
-    demo: 'https://github.com'
+    description: 'Make the paper plane fly by blowing. Try to get as far as possible! First App Project with two friends using Swift.',
+    github: 'https://github.com/irrationalK',
+    demo: 'https://github.com/irrationalK'
   },
   {
     id: 3,
-    image: flowchart,
+    image: portfolio,
     title: 'Portfolio Website',
-    description: 'Show my work',
-    github: 'https://github.com',
-    demo: 'https://github.com'
+    description: "This site represents my first dive into React. It's both a showcase of my past coding projects and a testament to my React learning journey.",
+    github: 'https://github.com/irrationalK/portfolio-website',
+    demo: 'https://k-lu.de'
   }
 ]
 
