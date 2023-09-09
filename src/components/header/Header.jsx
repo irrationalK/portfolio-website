@@ -30,7 +30,7 @@ const Header = () => {
       if (textProfession.length < professionTexts[professionIndex].length) {
         const professionTimer = setTimeout(() => {
           setTextProfession(prevText => prevText + professionTexts[professionIndex][textProfession.length]);
-        }, 150);
+        }, 120);
         return () => clearTimeout(professionTimer);
       } else {
         const changeTextTimer = setTimeout(() => {
