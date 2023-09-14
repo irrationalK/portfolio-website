@@ -61,6 +61,31 @@ textarea {
    font-family: monospace;
 }
 
+.btn {
+   background: transparent;
+}
+
+.success-notification {
+   position: fixed;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #6eb06e; 
+   padding: 15px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   display: flex;
+   align-items: center;
+   gap: 10px; 
+   opacity: 0;  
+   transition: opacity 0.3s ease-in-out; 
+}
+
+.success-notification.active {
+   opacity: 1; 
+}
+
+
 /* ------------ Medium Devices ------------ */
 @media screen and (max-width: 1024px) {
    .container.contact__container {

@@ -1,11 +1,12 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
-import {FaTelegram} from 'react-icons/fa'
+import {FaTelegram, FaCheckCircle} from 'react-icons/fa'
 
 const Contact = () => {
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,6 +14,11 @@ const Contact = () => {
     emailjs.sendForm('service_ufme23r', 'template_z8wsdhe', form.current, 'sPgoRH8AupoVzCcNd')
       .then((result) => {
           console.log(result.text);
+          setMessageSent(true);
+
+          setTimeout(() => {
+            setMessageSent(false);
+          }, 5000);
       }, (error) => {
           console.log(error.text);
       });
@@ -45,7 +51,11 @@ const Contact = () => {
           <input type='text' name='name' placeholder='Your Full Name' required />
           <input type='email' name='email' placeholder='Your Email' required />
           <textarea name='message' rows='7' placeholder='Your Message' required ></textarea> 
-          <button type='submit' className='btn btn-primary'>Send Message</button>  
+          <button type='submit' className='btn'>Send Message</button>  
+          <div className={`success-notification ${messageSent ? 'active' : ''}`}>
+            <FaCheckCircle /> Your message has been sent successfully!
+          </div>
+ 
         </form>
       </div>
 
