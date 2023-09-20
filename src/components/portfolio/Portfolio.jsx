@@ -3,6 +3,7 @@ import './portfolio.css'
 import flowchart from '../../assets/flowchart.png'
 import plane from '../../assets/blow-plane.png'
 import portfolio from '../../assets/portfolio.png'
+import plantsy from '../../assets/plantsy.png'
 
 const data = [
   {
@@ -15,20 +16,28 @@ const data = [
   },
   {
     id: 2,
-    image: plane,
-    title: 'Plane Blower',
-    description: 'Make the paper plane fly by blowing. Try to get as far as possible! First App Project with two friends using Swift.',
-    github: 'https://github.com/irrationalK',
-    demo: 'https://github.com/irrationalK'
+    image: plantsy,
+    title: 'Plantsy',
+    description: "Introducing a plant shop website meticulously crafted using React and styled with Tailwind CSS. Experience a seamless blend of botanical beauty and modern web design.",
+    github: 'https://github.com/irrationalK/plantsy',
+    demo: 'https://plantsy-shop.netlify.app'
   },
   {
     id: 3,
+    image: plane,
+    title: 'Plane Blower',
+    description: 'Make the paper plane fly by blowing. Try to get as far as possible! First App Project with two friends using Swift.',
+    github: 'https://github.com/irrationalK/blow-plane',
+    demo: 'https://github.com/irrationalK'
+  },
+  {
+    id: 4,
     image: portfolio,
     title: 'Portfolio Website',
-    description: "This site represents my first dive into React. It's both a showcase of my past coding projects and a testament to my React learning journey.",
+    description: "This site represents my first dive into React. It's a showcase of my past coding projects and my React learning journey.",
     github: 'https://github.com/irrationalK/portfolio-website',
     demo: 'https://k-lu.de'
-  }
+  },
 ]
 
 const Portfolio = () => {
