@@ -1,6 +1,6 @@
 import React from 'react'
 import './experience.css'
-import {BsPatchCheckFill} from 'react-icons/bs'
+import { BsPatchCheckFill } from 'react-icons/bs'
 
 const Experience = () => {
   return (
@@ -20,12 +20,12 @@ const Experience = () => {
               </div>
             </article>
             <article className='experience__details'>
-                <BsPatchCheckFill className='experience__details-icon' />
-                <div>
-                  <h4>TypeScript</h4>
-                  <small className='text-light'>Advanced</small>
-                </div>
-              </article>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>TypeScript</h4>
+                <small className='text-light'>Advanced</small>
+              </div>
+            </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
@@ -69,12 +69,26 @@ const Experience = () => {
               </div>
             </article>
             <article className='experience__details'>
-                <BsPatchCheckFill className='experience__details-icon' />
-                <div>
-                  <h4>Lit</h4>
-                  <small className='text-light'>Intermediate</small>
-                </div>
-              </article>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>Lit</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>NextJS</h4>
+                <small className='text-light'>Basic</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon' />
+              <div>
+                <h4>React Native</h4>
+                <small className='text-light'>Basic</small>
+              </div>
+            </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>

@@ -4,13 +4,14 @@ import flowchart from '../../assets/flowchart.png'
 import plane from '../../assets/blow-plane.png'
 import portfolio from '../../assets/portfolio.png'
 import plantsy from '../../assets/plantsy.png'
+import weatherApp from '../../assets/weatherApp.png'
 
 const data = [
   {
     id: 1,
     image: flowchart,
     title: 'Flowchart-Widget',
-    description: 'Editor for creating programme flowcharts with translation function into pseudocode and natural language.\n' + 'Created with TypeScript and Lit.',
+    description: 'Editor for creating programme flowcharts with translation function into pseudocode and natural language. Created with TypeScript and Lit.',
     github: 'https://github.com/irrationalK',
     demo: 'https://flowchart-lu.netlify.app'
   },
@@ -38,6 +39,14 @@ const data = [
     github: 'https://github.com/irrationalK/portfolio-website',
     demo: 'https://k-lu.de'
   },
+  {
+    id: 5,
+    image: weatherApp,
+    title: 'Weather App',
+    description: "Currently, I'm developing a weather app using React Native to familiarize myself with the framework and to improve my Photoshop skills.",
+    github: 'https://github.com/irrationalK/weather-app',
+    demo: 'https://github.com/irrationalK'
+  },
 ]
 
 const Portfolio = () => {
@@ -47,23 +56,23 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-       {
-        data.map(({id, image, title, description, github, demo}) => {
-          return (
-            <article key={id} className='portfolio__item'>
-            <div className='portfolio__item-image'>
-              <img src={image} alt={title} />
-            </div>
-            <h3>{title}</h3>
-            <h4>{description}</h4>
-            <div className="portfolio__item-cta">
-              <a href={github} target='_blank' className='btn'>Github</a>
-              <a href={demo} target='_blank' className='btn'>Live Demo</a>
-            </div>
-          </article>
-          )
-        })
-       }
+        {
+          data.map(({ id, image, title, description, github, demo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <h4>{description}</h4>
+                <div className="portfolio__item-cta">
+                  <a href={github} target='_blank' className='btn'>Github</a>
+                  <a href={demo} target='_blank' className='btn'>Live Demo</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )
