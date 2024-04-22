@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {FaTelegram, FaCheckCircle} from 'react-icons/fa'
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
   const form = useRef();
@@ -24,12 +25,17 @@ const Contact = () => {
       });
   };
 
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
+
   return (
-    <section id='contact' className='contact'>
+    <section id='contact' className='contact'  ref={ref}>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
+      <div className={`container contact__container ${inView ? 'fade-up' : ''}`}>
         <div className="contact__options">
           <article className='contact__option'>
             <MdOutlineEmail className='contact__option-icon'/>

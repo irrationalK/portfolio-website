@@ -1,14 +1,20 @@
 import React from 'react'
 import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
+import { useInView } from 'react-intersection-observer';
 
 const Experience = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
+
   return (
-    <section id='experience' className='experience'>
+    <section id='experience' className='experience' ref={ref}>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className='container experience__container'>
+      <div className={`container experience__container ${inView ? 'fade-up' : ''}`}>
         <div className='experience__frontend'>
           <h3>Programming Language</h3>
           <div className="experience__content">

@@ -5,6 +5,7 @@ import plane from '../../assets/blow-plane.png'
 import portfolio from '../../assets/portfolio.png'
 import plantsy from '../../assets/plantsy.png'
 import weatherApp from '../../assets/weatherApp.png'
+import { useInView } from 'react-intersection-observer';
 
 const data = [
   {
@@ -50,12 +51,17 @@ const data = [
 ]
 
 const Portfolio = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
+  
   return (
-    <section id='portfolio' className='portfolio'>
+    <section id='portfolio' className='portfolio' ref={ref}>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
+      <div className={`container portfolio__container ${inView ? 'fade-up' : ''}`}>
         {
           data.map(({ id, image, title, description, github, demo }) => {
             return (

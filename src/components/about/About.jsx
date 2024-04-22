@@ -5,14 +5,20 @@ import CV from '../../assets/cv.pdf'
 import {MdOutlineSchool} from 'react-icons/md'
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
+
   return (
-    <section id='about' className='about'>
+    <section id='about' className='about' ref={ref}>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className='container about__container'>
+      <div className={`container about__container ${inView ? 'fade-up' : ''}`}>
           <div className='about__me'>
             <div className='about__me-image'>
               <img src={ME} alt='Profilbild Kevin Lu' />
