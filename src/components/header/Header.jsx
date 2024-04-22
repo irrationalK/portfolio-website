@@ -6,7 +6,7 @@ import logo from '../../assets/logoGradient.svg'
 const Header = () => {
   const greetingText = "Hi, I'm";
   const nameText = "Kevin Lu.";
-  const professionTexts = ["M. Ed. Computer Science, RWTH", "Web Developer", "App Developer"];
+  const professionTexts = ["M. Ed. Computer Science, RWTH", "Software Engineer", "Web Developer", "App Developer"];
   
   const [textGreeting, setTextGreeting] = useState('');
   const [textName, setTextName] = useState('');

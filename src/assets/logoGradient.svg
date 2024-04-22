@@ -11,7 +11,7 @@
 	 <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#162640; stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#fd8f3a; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#76BFBD; stop-opacity:1" />
         </linearGradient>
     </defs>
     <path id="Layer" fill="url(#gradient)" d="m394.4 154.8l-73.3-0.1q-0.1 0-0.2 0 0 0-0.1 0 0-0.1 0-0.1 0-0.1-0.1-0.2l0.1-9.3q0-0.1 0-0.2 0 0 0-0.1 0.1 0 0.1 0 0.1 0 0.2-0.1h83.4q0.1 0.1 0.1 0.1 0.1 0 0.1 0 0.1 0.1 0.1 0.1 0 0.1 0 0.2l-0.1 84.8q0 0.1 0 0.2 0 0-0.1 0.1 0 0-0.1 0 0 0-0.1 0h-9.3q-0.1 0-0.2 0 0 0-0.1 0 0-0.1 0-0.1 0-0.1-0.1-0.2l0.1-74.8q-0.1-0.1-0.1-0.2 0 0 0-0.1-0.1 0-0.1 0-0.1 0-0.2-0.1z"/>

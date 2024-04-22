@@ -36,17 +36,18 @@ const About = () => {
               <article className='about__card'>
                 <VscFolderLibrary className='about__icon'/>
                 <h5>Projects</h5>
-                <small>5+ Completed</small>
+                <small>10+ Completed</small>
               </article>
             </div>
 
             <p>
-              Hey! I'm Kevin Lu, a passionate web developer based in Aachen, Germany. Having recently completed my Master's degree in Computer Science and Mathematics for Teaching from RWTH Aachen, I bring a robust blend of analytical and technical skills to the field of web development. <br />
+              Hey! I'm Kevin Lu, a passionate web developer based in Aachen, Germany. Having completed my Master's degree in Computer Science and Mathematics for Teaching from RWTH Aachen, I bring a robust blend of analytical and technical skills to the field of app and web development. <br />
               <br />
-              Throughout my academic journey, I've been actively involved in various web development projects, improving my skills and acquiring hands-on experience. With an interest in exploring new technologies and frameworks, i'm currently developing with ReactJS. <br />
+              After my graduation, I worked as a Software Developer, engaging in various app and web development projects that have honed my skills and deepened my practical knowledge. Throughout my academic journey and professional career, I've been actively involved in multiple projects, constantly improving my abilities and gaining hands-on experience. With an interest in exploring new technologies and frameworks. <br />
               <br />
-              Currently, I'm on the lookout for an opportunity as a Web Developer. I aim to further improve my skills, collaborate with a dynamic team, and contribute to real-world projects. 
+              Currently, I work as a computer science teacher, finding great joy in teaching.
             </p>
+
 
             <a href={CV} download className='btn'>Download CV</a>
           </div>
