@@ -14,11 +14,11 @@ const About = () => {
   });
 
   return (
-    <section id='about' className='about' ref={ref}>
+    <section id='about' className={`about ${inView ? 'fade-up' : ''}`} ref={ref}>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className={`container about__container ${inView ? 'fade-up' : ''}`}>
+      <div className={'container about__container'}>
           <div className='about__me'>
             <div className='about__me-image'>
               <img src={ME} alt='Profilbild Kevin Lu' />

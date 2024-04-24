@@ -31,11 +31,11 @@ const Contact = () => {
   });
 
   return (
-    <section id='contact' className='contact'  ref={ref}>
+    <section id='contact' className={`contact ${inView ? 'fade-up' : ''}`}  ref={ref}>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className={`container contact__container ${inView ? 'fade-up' : ''}`}>
+      <div className={'container contact__container'}>
         <div className="contact__options">
           <article className='contact__option'>
             <MdOutlineEmail className='contact__option-icon'/>

@@ -55,13 +55,13 @@ const Portfolio = () => {
     triggerOnce: true,
     rootMargin: '-100px 0px',
   });
-  
+
   return (
-    <section id='portfolio' className='portfolio' ref={ref}>
+    <section id='portfolio' className={`portfolio ${inView ? 'fade-up' : ''}`} ref={ref}>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
-      <div className={`container portfolio__container ${inView ? 'fade-up' : ''}`}>
+      <div className={'container portfolio__container'}>
         {
           data.map(({ id, image, title, description, github, demo }) => {
             return (

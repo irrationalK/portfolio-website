@@ -10,11 +10,11 @@ const Experience = () => {
   });
 
   return (
-    <section id='experience' className='experience' ref={ref}>
+    <section id='experience' className={`experience ${inView ? 'fade-up' : ''}`} ref={ref}>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className={`container experience__container ${inView ? 'fade-up' : ''}`}>
+      <div className={'container experience__container'}>
         <div className='experience__frontend'>
           <h3>Programming Language</h3>
           <div className="experience__content">
